@@ -77,7 +77,7 @@ async def async_setup_platform(
                     hub,
                     cover[CONF_NAME],
                     cover.get(CONF_RELAY_PIN),
-                    relay_time,
+                    cover.get(CONF_RELAY_TIME) or relay_time,
                     invert_relay,
                     "AS_IS",
                     "PUSH_PULL",
